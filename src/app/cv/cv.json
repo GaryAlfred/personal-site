@@ -1,0 +1,364 @@
+{
+    "forename": "Gary",
+    "surname": "Alfred",
+    "email": "gary.alfred@gmail.com",
+    "phone": "(727) 482-4851",
+    "address": "11638 Anchor Way, Largo FL",
+    "url": "",
+
+    "summaries": [
+        {
+            "tags": ["formal", "word-salad"], 
+            "description": "Multifaceted software developer with over 20 years of experience focused on creating market dominating applications. Proven ability to leverage full-stack knowledge and experience to build user-centric Web applications. Extensive expertise in delivering enterprise software applications within Agile methodologies. Experience facilitating cutting-edge solutions for business applications. Excellent soft skills and a collaborative, team-oriented approach. Innovative problem solver willing to adopt new solutions better suited to the business goals. Diverse skill set across a wide range of technologies."
+        }
+    ],
+    "skills": [
+        {
+          "name": "HTML",
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
+        },
+        {
+          "name": "CSS",
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
+        },
+        {
+          "name": "SCSS / Less",
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
+        },
+        {
+          "name": "Javascript",
+          "rating": 5
+        },
+        {
+          "name": "TypeScript",
+          "rating": 5
+        },
+        {
+          "name": "NodeJS",
+          "rating": 5
+        },
+        {
+          "name": "Usability",
+          "rating": 5
+        },
+        {
+          "name": "UI Design",
+          "rating": 5
+        },
+        {
+          "name": "C#",
+          "rating": 5
+        },
+        {
+          "name": "Angular 2+",
+          "rating": 5
+        },
+        {
+          "name": "Photoshop",
+          "rating": 5
+        },
+        {
+          "name": "Git",
+          "rating": 5
+        },
+        {
+          "name": "Jira",
+          "rating": 5
+        },
+        {
+          "name": "Agile Scrum",
+          "rating": 5
+        },
+        {
+          "name": "Web API",
+          "rating": 5
+        },
+        {
+          "name": "REST",
+          "rating": 5
+        },
+        {
+          "name": "AngularJS",
+          "rating": 4
+        },
+        {
+          "name": "Razor",
+          "rating": 4
+        },
+        {
+          "name": "ASP.NET MVC",
+          "rating": 4
+        },
+        {
+          "name": "ASP.NET Web Forms",
+          "rating": 4
+        },
+        {
+          "name": "T-SQL",
+          "rating": 4
+        },
+        {
+          "name": "Subversion",
+          "rating": 4
+        },
+        {
+          "name": "FogBugz",
+          "rating": 4
+        },
+        {
+          "name": "SOAP",
+          "rating": 4
+        },
+        {
+          "name": "XPath",
+          "rating": 4
+        },
+        {
+          "name": "jQuery",
+          "rating": 4
+        },
+        {
+          "name": "Postman",
+          "rating": 4
+        },
+        {
+          "name": "Perl",
+          "rating": 3
+        },
+        {
+          "name": "Basic / Visual Basic",
+          "rating": 3
+        },
+        {
+          "name": "Lua",
+          "rating": 3
+        },
+        {
+          "name": "Papyrus",
+          "rating": 3
+        },
+        {
+          "name": "HLSL",
+          "rating": 3
+        },
+        {
+          "name": "C++",
+          "rating": 3
+        },
+        {
+          "name": "Java",
+          "rating": 3
+        },
+        {
+          "name": "ASP",
+          "rating": 3
+        },
+        {
+          "name": "Oracle",
+          "rating": 3
+        },
+        {
+          "name": "Postgres",
+          "rating": 3
+        },
+        {
+          "name": "MySQL",
+          "rating": 3
+        },
+        {
+          "name": "XNA",
+          "rating": 3
+        },
+        {
+          "name": "ActionScript",
+          "rating": 3
+        },
+        {
+          "name": "ColdFusion",
+          "rating": 3
+        },
+        {
+          "name": "PHP",
+          "rating": 3
+        },
+        {
+          "name": "React",
+          "rating": 3
+        },
+        {
+          "name": "Vue.js",
+          "rating": 3
+        }
+    ],
+    "jobs": [
+        {
+            "tags": ["front-end", "architect", "engineer", "fullstack", "developer"],
+            "description": "",
+            "title": "Front-end Architect / Team Lead / Senior Software Engineer",
+            "organizationName": "Affinitiv (née Loop LLC)",
+            "location": "Clearwater, FL",
+            "startDate": "2009-07-27",
+            "endDate": "2020-03-31",
+            "accomplishments": [
+                "Led development of a variety of enterprise Web-based applications",
+                "Provided full-stack (MS Stack), full lifecycle development within an Agile scrum environment",
+                "Refined complex business needs into detailed software requirements",
+                "Converted old ASP.NET Web Forms application to an Angular PWA front-end and .NET Core Web API",
+                "Wrote stored procedures",
+                "Updated OAuth2 OIDC authentication app",
+                "Met with CTO, CPO, product owners and designers to provide feedback regarding the technical feasibility and usability of UI designs",
+                "Coached UI/UX team on principles of patterned design and component reuse",
+                "Communicated company directives and expectations to team members",
+                "Produced company coding standards and best practices documents for front-end development",
+                "Provided CSS, Typescript and Angular support for over 50 software engineers",
+                "Established a monorepo of common UI code (components, services, themes, etc.) to promote DRY code and move the company from design-per-app to design-by-standards"
+            ]
+        },
+        {
+            "tags": ["front-end", "engineer", "fullstack", "developer"],
+            "description": "",
+            "title": "Lead Developer / Partner",
+            "organizationName": "Constructive Software Solutions",
+            "location": "Palm Harbor, FL",
+            "startDate": "2003-10-01",
+            "endDate": "2009-07-01",
+            "accomplishments": [
+                "Led a development team in creating and supporting a wide variety of retail software products",
+                "Programmed in C# and T-SQL",
+                "Created, updated and maintained several Microsoft Visio extensions",
+                "Implemented XML Web services for a variety of products",
+                "Created a Microsoft Retail Management System extension",
+                "Developed an industry master catalog based on SQL Server",
+                "Built a 3D rendering and physics engine",
+                "Designed an XNA game that utilized a MS Visio level editor as a proof of concept for the MS Visio team"
+            ]
+        },
+        {
+            "tags": ["Web", "developer"],
+            "description": "",
+            "title": "Owner / Web Developer",
+            "organizationName": "Gary Alfred Inc.",
+            "location": "Largo, FL",
+            "startDate": "2002-08-01",
+            "endDate": "2003-10-01",
+            "accomplishments": [
+                "Formed an S-corporation that provided interactive Web design and application development for clients",
+                "Used ASP.NET, PHP, Flash, CSS, JavaScript, and MySQL for implementing designs created in Photoshop, Illustrator and Visio",
+                "Gained invaluable experience managing projects, time and budgets"
+            ]
+        },
+        {
+            "tags": ["junior", "developer", "programmer"],
+            "description": "",
+            "title": "Junior Programmer",
+            "organizationName": "Digital Exchange Systems Inc.",
+            "location": "Tampa, FL",
+            "startDate": "2000-10-01",
+            "endDate": "2002-08-01",
+            "accomplishments": [
+                "Created UI for online B2B auction site using classic ASP and Flash",
+                "Developed XML socket services"
+            ]
+        },
+        {
+            "tags": ["tech", "developer", "programmer"],
+            "description": "",
+            "title": "Tech Lead",
+            "organizationName": "McVey Creative Group",
+            "location": "St. Petersburg, FL",
+            "startDate": "1999-10-01",
+            "endDate": "2000-08-01",
+            "accomplishments": [
+                "Developed marketing websites, e-learning and e-commerce applications for clients using ASP, Flash, XML sockets, and SQL Server"
+            ]
+        },
+        {
+            "tags": ["tech", "developer", "programmer"],
+            "description": "",
+            "title": "Junior Programmer",
+            "organizationName": "TeleServices Internet Group",
+            "location": "St. Petersburg, FL",
+            "startDate": "1998-08-01",
+            "endDate": "1999-08-01",
+            "accomplishments": [
+                "Worked as a programmer on a travel services and e-commerce site using Perl, Oracle, ASP and SQL Server"
+            ]
+        }
+    ],
+    "volunteering": [
+        {
+            "tags": ["mentor", "trainer", "teacher"],
+            "description": "",
+            "title": "",
+            "organizationName": "Pinellas County Schools",
+            "location": "Pinellas, FL",
+            "startDate": "2008-09-01",
+            "endDate": "Present",
+            "accomplishments": [
+                "Great American Teach-In presenter",
+                "Career shadowing mentor",
+                "Enterprise Village chaperone"
+            ]
+        },
+        {
+            "tags": ["tech", "support", "design"],
+            "description": "",
+            "title": "",
+            "organizationName": "Florida PTA",
+            "location": "Pinellas, FL",
+            "startDate": "2008-09-01",
+            "endDate": "Present",
+            "accomplishments": [
+                "Tech Support for annual conference",
+                "Marketing, art and illustration design"
+            ]
+        },
+        {
+            "tags": ["IT", "chair", "Web", "design"],
+            "description": "",
+            "title": "",
+            "organizationName": "Pinellas County Council of PTAs",
+            "location": "Pinellas, FL",
+            "startDate": "2008-09-01",
+            "endDate": "Present",
+            "accomplishments": [
+                "IT Chairperson - set up file sharing, email, software services",
+                "Web, marketing, art and illustration design",
+                "General volunteer"
+            ]
+        },
+        {
+            "tags": ["design"],
+            "description": "",
+            "title": "",
+            "organizationName": "Suncoast Voices for Children",
+            "location": "Pinellas, FL",
+            "startDate": "2008-09-01",
+            "endDate": "Present",
+            "accomplishments": [
+                "Art and illustration design"
+            ]
+        },
+        {
+            "tags": ["ministry", "design", "leader"],
+            "description": "",
+            "title": "",
+            "organizationName": "Church",
+            "location": "Pinellas, FL",
+            "startDate": "2008-09-01",
+            "endDate": "Present",
+            "accomplishments": [
+                "Prison ministry",
+                "Music ministry",
+                "Fellowship host and study leader",
+                "RCS Food Pantry",
+                "Beach cleanup",
+                "Marketing, art and illustration design",
+                "General volunteer"
+            ]
+        }
+    ]
+}

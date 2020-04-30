@@ -1,0 +1,55 @@
+:host {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.document {
+    flex: 0 1 812px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+
+    & > div {
+        margin-right: 2rem;
+        flex: 1 0;
+    }
+    & > div:last-child {
+        margin-right: 0;
+    }
+}
+
+.skill { 
+    & > span {
+        display: inline-block;
+        width: 150px;
+    }
+}
+
+.job {
+    margin-bottom: 2rem;
+    & ul.accomplishments {
+        padding-left: 2rem;
+        margin-top: 1rem;
+
+        & li {
+            list-style-position: outside;
+            list-style-type: disc;
+        }
+    }
+}
+
+@media all and (max-width: 796px) {
+    app-rating {
+        display: none;
+    }
+
+}
+
+@media print {
+    .job {
+        page-break-inside: avoid;
+    }
+}

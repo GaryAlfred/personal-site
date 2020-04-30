@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="538" height="200" viewBox="0 0 538 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff7eff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f666ff;
+      }
+
+      .cls-3 {
+        fill: #dd4dff;
+      }
+
+      .cls-4 {
+        fill: #c531ff;
+      }
+
+      .cls-5 {
+        fill: #ae00ff;
+      }
+    </style>
+  </defs>
+  <path id="Lvl1" class="cls-1" d="M79.325,41.875v116.25l35.54,20.519L90,193,9.46,146.5v-93L90,7l24.865,14.356Z"/>
+  <path id="Lvl2" class="cls-2" d="M169.325,41.875v116.25l35.54,20.519L180,193,99.46,146.5v-93L180,7l24.865,14.356Z"/>
+  <path id="Lvl3" class="cls-3" d="M259.325,41.875v116.25l35.54,20.519L270,193l-80.54-46.5v-93L270,7l24.865,14.356Z"/>
+  <path id="Lvl4" class="cls-4" d="M349.325,41.875v116.25l35.54,20.519L360,193l-80.54-46.5v-93L360,7l24.865,14.356Z"/>
+  <path id="Lvl5" class="cls-5" d="M450,7l80.54,46.5v93L450,193l-80.54-46.5v-93Z"/>
+</svg>

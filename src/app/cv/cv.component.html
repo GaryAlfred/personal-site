@@ -1,0 +1,60 @@
+<div class="document">
+<div class="cv__header">
+  <h1 class="print-only">{{ cv.name }}</h1>
+  <div class="contact-info">
+    <div class="phone">{{ cv.phone }}</div>
+    <div class="email">{{ cv.email }}</div>
+    <div class="address">{{ cv.address }}</div>
+  </div>
+</div>
+<div class="summary">
+  <p>{{ cv.summaries[0].description }}</p>
+</div>
+<h2>Qualifications and Skills</h2>
+<div class="skills">
+  <div>
+    <h3>Mastered Skills</h3>
+    <div class="skill" *ngFor="let skill of masterSkills">
+      <span>{{ skill.name }}</span>
+      <app-rating [value]="skill.rating"></app-rating>
+    </div>
+  </div>
+  <div>
+    <h3>Expert Skills</h3>
+    <div class="skill" *ngFor="let skill of expertSkills">
+      <span>{{ skill.name }}</span>
+      <app-rating [value]="skill.rating"></app-rating>
+    </div>
+  </div>
+  <div>
+    <h3>Good Skills</h3>
+    <div class="skill" *ngFor="let skill of goodSkills">
+      <span>{{ skill.name }}</span>
+      <app-rating [value]="skill.rating"></app-rating>
+    </div>
+  </div>
+
+</div>
+<h2>Professional Experience</h2>
+<div class="jobs">
+  <div class="job" *ngFor="let job of cv.jobs">
+    <h3>{{ job.title }}</h3>
+    <div>{{ job.organizationName }}, {{ job.location }}</div>
+    <div>{{ job.startDate }} thru {{ job.endDate }}</div>
+    <ul class="accomplishments">
+      <li *ngFor="let accomplishment of job.accomplishments">{{ accomplishment }}</li>
+    </ul>
+  </div>
+</div>
+ 
+<h2>Volunteerism</h2>
+<div>
+  <div class="job" *ngFor="let job of cv.volunteering">
+    <h3>{{ job.organizationName }}</h3>
+    <ul class="accomplishments">
+      <li *ngFor="let accomplishment of job.accomplishments">{{ accomplishment }}</li>
+    </ul>
+  </div>
+</div>
+
+</div>
