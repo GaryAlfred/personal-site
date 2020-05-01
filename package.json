@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --output-path build --base-href /personal-site/",
+    "build": "ng build --prod --output-path ./garyalfred.github.io",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
