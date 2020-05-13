@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from './skill.model';
-import { Rating } from '../rating/rating.enum';
-import * as cvFile from './cv.json';
-import { CV } from './cv.model';
+import { CV } from './models/cv.model';
+import { CvService } from './cv.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-cv',
@@ -11,34 +10,81 @@ import { CV } from './cv.model';
 })
 export class CvComponent implements OnInit {
 
-  public cv: CV = new CV((cvFile as any).default);
+  public cv: CV;
+  public validTags = [
+    'engineer',
+    'frontend',
+    'fullstack'
+  ];
+  public selectedTags: string[] = [];
+  public validResumes = {
+    jamstack: { tags: [] },
+    frontend: { tags: ['frontend'] }
+  };
+  public showRatings = false;
 
-  public get masterSkills(): Skill[] {
-    return this.cv.skills.filter(s => {
-      console.log(`${s.name}.isMaster: ${s.rating === Rating.Master}`);
-      return s.rating === Rating.Master;
-    });
+  public shouldHighlight(tags: string[]) {
+    if (this.selectedTags) {
+      return this.tagsIntersect(this.selectedTags, tags);
+    }
+    // If there are no selected tags, highlight everything.
+    return true;
   }
 
-  public get expertSkills(): Skill[] {
-    return this.cv.skills.filter(s => {
-      console.log(`${s.name}.isExpert: ${s.rating === Rating.Expert}`);
-      return s.rating === Rating.Expert;
-    });
+  public selectedTagsChanged() {
+    console.log('selectedTagsChanged');
+    const autoHighlight = !(this.selectedTags && this.selectedTags.length);
+    for (const skill of this.cv.skills) {
+      skill.highlight = autoHighlight ||
+        (skill.tags && this.tagsIntersect(skill.tags, this.selectedTags));
+    }
   }
 
-  public get goodSkills(): Skill[] {
-    return this.cv.skills.filter(s => {
-      console.log(`${s.name}.isGood: ${s.rating === Rating.Good}`);
-      return s.rating === Rating.Good;
-    });
+  public toggleTagSelection(tag: string) {
+    const idx = this.selectedTags.indexOf(tag);
+    if (idx >= 0) {
+      this.selectedTags.splice(idx, 1);
+    } else {
+      this.selectedTags.push(tag);
+    }
+    this.selectedTagsChanged();
   }
 
-  constructor() { }
+  constructor(cvService: CvService, route: ActivatedRoute) {
+    this.cv = cvService.cv;
+    route.queryParams.subscribe(qp => this.processQueryParams(qp)); // you can also do this in ngOnInit
+  }
 
   ngOnInit(): void {
-    console.log('cv...');
-    console.log(this.cv);
   }
+
+  private tagsIntersect(arr1: string[], arr2: string[]) {
+    for (const tag of arr1) {
+      if (arr2.indexOf(tag) >= 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private processQueryParams = (params: Params) => {
+    this.selectedTags = [];
+    if (params.resume) {
+      const resume = this.validResumes[params.resume];
+      if (resume) {
+        this.selectedTags = resume.tags;
+      }
+    }
+    if (params.tags && params.tags.length) {
+      const tags = params.tags.split(',');
+      for (const tag of tags) {
+        if (this.validTags.indexOf(tag) >= 0) {
+          this.selectedTags.push(tag);
+        }
+      }
+    }
+    this.selectedTagsChanged();
+  }
+
 
 }

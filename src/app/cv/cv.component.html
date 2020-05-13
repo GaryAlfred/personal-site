@@ -11,27 +11,15 @@
   <p>{{ cv.summaries[0].description }}</p>
 </div>
 <h2>Qualifications and Skills</h2>
+<div class="filters">
+  <button type="button" *ngFor="let tag of validTags" 
+    [ngClass]="{ 'tag btn btn-sm': true, 'btn-primary': selectedTags.indexOf(tag) >= 0 }" 
+    (click)="toggleTagSelection(tag)">{{ tag }}</button>
+</div>
 <div class="skills">
-  <div>
-    <h3>Mastered Skills</h3>
-    <div class="skill" *ngFor="let skill of masterSkills">
-      <span>{{ skill.name }}</span>
-      <app-rating [value]="skill.rating"></app-rating>
-    </div>
-  </div>
-  <div>
-    <h3>Expert Skills</h3>
-    <div class="skill" *ngFor="let skill of expertSkills">
-      <span>{{ skill.name }}</span>
-      <app-rating [value]="skill.rating"></app-rating>
-    </div>
-  </div>
-  <div>
-    <h3>Good Skills</h3>
-    <div class="skill" *ngFor="let skill of goodSkills">
-      <span>{{ skill.name }}</span>
-      <app-rating [value]="skill.rating"></app-rating>
-    </div>
+  <div *ngFor="let skill of cv.skills" [ngClass]="{ 'skill': true, 'highlighted': skill.highlight }">
+    <span>{{ skill.name }}</span>
+    <app-rating [value]="skill.rating" *ngIf="showRatings"></app-rating>
   </div>
 
 </div>

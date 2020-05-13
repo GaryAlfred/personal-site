@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [ "*.cv.json" ],
+            "url": "./src/app/cv/models/cv.schema.json"
+        }        
+    ]
+}

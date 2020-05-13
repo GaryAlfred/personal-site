@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "Curriculum Vitae",
+    "description": "A schema for creating a comprehensive CV from which résumés may be derived.",
+    "type": "object",
+    "definitions": {
+        "iso8601": {
+          "type": "string",
+          "description": "e.g. 2014-06-29",
+          "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
+        }
+      },
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "Link to the version of the schema that can validate the resume",
+            "format": "uri"
+        },
+        "contact": {
+            "type": "object",
+            "description": "ContactInformation"
+        },
+        "education": {
+            "one-of": [
+                {
+                    "type": "string",
+                    "description": ""
+                }
+            ]
+        }
+    }
+
+}

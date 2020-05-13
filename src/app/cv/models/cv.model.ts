@@ -29,12 +29,7 @@ export class CV implements CvJson {
      }
 }
 
-interface CvJson {
-    forename: string;
-    surname: string;
-    phone: string;
-    email: string;
-    address: string;
+interface CvJson extends Contact {
     url: string;
     summaries: Array<TaggedAndDescribed>;
     skills: Skill[];
@@ -43,3 +38,14 @@ interface CvJson {
     education?: string[];
 }
 
+export interface Contact {
+    forename: string;
+    surname: string;
+    phone: string;
+    email: string;
+    address: Address;
+}
+
+export interface Address {
+    
+}

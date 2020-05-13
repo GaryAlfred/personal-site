@@ -16,45 +16,52 @@
         {
           "name": "HTML",
           "rating": 5,
-          "tags": ["frontend", "fullstack"]
+          "tags": ["frontend"]
         },
         {
           "name": "CSS",
           "rating": 5,
-          "tags": ["frontend", "fullstack"]
+          "tags": ["frontend"]
         },
         {
           "name": "SCSS / Less",
           "rating": 5,
-          "tags": ["frontend", "fullstack"]
+          "tags": ["frontend"]
         },
         {
           "name": "Javascript",
-          "rating": 5
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
         },
         {
           "name": "TypeScript",
-          "rating": 5
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
         },
         {
           "name": "NodeJS",
-          "rating": 5
+          "rating": 5,
+          "tags": ["fullstack"]
         },
         {
           "name": "Usability",
-          "rating": 5
+          "rating": 5,
+          "tags": ["frontend"]
         },
         {
           "name": "UI Design",
-          "rating": 5
+          "rating": 5,
+          "tags": ["frontend"]
         },
         {
           "name": "C#",
-          "rating": 5
+          "rating": 5,
+          "tags": ["fullstack"]
         },
         {
           "name": "Angular 2+",
-          "rating": 5
+          "rating": 5,
+          "tags": ["frontend", "fullstack"]
         },
         {
           "name": "Photoshop",
